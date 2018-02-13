@@ -1,0 +1,157 @@
+
+/* page set-up */
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  font-family: 'muli', sans-serif;
+}
+
+footer {
+  margin-top: 20px;
+  border-top: 2px solid #dddddd; 
+  height: 50px;
+  padding: 0px 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+hr { 
+  border: 1px solid #dddddd;
+}
+
+section {
+  margin: 10px 0px;
+}
+
+img {
+  border-radius: 4px;
+}
+
+/* flex box setp */
+.container { 
+  display: flex; 
+  flex-flow: row wrap;
+}
+
+.item-grow-1 {  flex-grow: 1; }
+.item-grow-2 {  flex-grow: 2; }
+.item-grow-3 {  flex-grow: 3; }
+.item-grow-4 {  flex-grow: 4; }
+.item-grow-5 {  flex-grow: 5; }
+.item-grow-6 {  flex-grow: 6; }
+
+.order-1 {  order: 1; }
+.order-2 {  order: 2; }
+.order-3 {  order: 3; }
+.order-4 {  order: 4; }
+.order-5 {  order: 5; }
+.order-6 {  order: 6; }
+
+
+/* nav */
+.navigation {
+  list-style: none;
+  margin: 0; 
+  background-color: #333333;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #ffffff;
+  justify-content: space-between;
+}
+
+.navigation li {
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.navigation a:hover {
+  background: #444444;
+  color: #5fffca;
+}
+
+.masthead {
+  text-align: right;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 2px solid #dddddd;
+}
+
+.masthead p{
+  margin: 0px; 
+  padding: 12px;
+  color: #333333;
+}
+
+#navButton {
+  width: 60px;
+  display: none;
+}
+
+#navButton p i{
+  font-size: 2.4em;
+}
+
+#navButton p span{
+  position: relative;
+  top: -6px;
+  left: -1px;
+  font-size: 0.8em;
+}
+
+.title {
+  padding-left: 20px;
+}
+
+/* content */
+
+.box {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.captionBox {
+  margin: 10px 0px 5px 0px;
+  padding: 10px;
+}
+
+.caption {
+  text-align: left;
+  margin-top: 0px; 
+  font-size: 1em;
+}
+
+.innerBox {
+  border: 2px solid #dddddd;
+  border-radius: 4px;
+  padding: 5px;
+} 
+
+.innerBox:hover {
+  border: 2px solid #5fffca;
+} 
+
+
+
+
+
+
