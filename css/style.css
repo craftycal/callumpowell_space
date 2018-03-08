@@ -1,10 +1,11 @@
-
 /* page set-up */
 
 html, body {
   height: 100%;
   margin: 0px;
   font-family: 'muli', sans-serif;
+  color: #333333;
+  background-color: #FDFDFD;
 }
 
 footer {
@@ -83,16 +84,20 @@ img {
 
 .navigation a:hover {
   background: #444444;
-  color: #5fffca;
+  color: #61D6D6;
 }
 
 .masthead {
-  text-align: right;
   justify-content: space-between;
   display: flex;
   flex-flow: row wrap;
   border-bottom: 2px solid #dddddd;
 }
+
+.logoBox {
+  padding: 12px 12px 0px 12px;
+}
+
 
 .masthead p{
   margin: 0px; 
@@ -101,27 +106,23 @@ img {
 }
 
 #navButton {
-  width: 60px;
   display: none;
+  text-align: right;
 }
 
 #navButton p i{
+  text-align: right;
   font-size: 2.4em;
 }
 
 #navButton p span{
   position: relative;
   top: -6px;
-  left: -1px;
+  left: -5px;
   font-size: 0.8em;
 }
 
-.title {
-  padding-left: 20px;
-}
-
 /* content */
-
 .box {
   width: 25%;
   padding: 10px;
@@ -147,11 +148,144 @@ img {
 } 
 
 .innerBox:hover {
-  border: 2px solid #5fffca;
+  border: 2px solid #39CCCC;
 } 
 
 
+.hvr-ripple-out-good {
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  color: #333;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
 
+.hvr-ripple-out-good:hover {
+  color: #39CCCC;
+  border-color: #39CCCC;
+}
 
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
 
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+.hvr-ripple-out-good {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+.hvr-ripple-out-good:before {
+  content: '';
+  position: absolute;
+  border: rgba(0, 0, 0, 0.0) solid 2px;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.hvr-ripple-out-good:hover:before, .hvr-ripple-out-good:focus:before, .hvr-ripple-out-good:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+  border-color: #39CCCC;
+  animation-fill-mode: forwards;
+}
+
+.fill-good {
+  background-color: #39CCCC; 
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.fill-good:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.hvr-ripple-out-bad {
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  color: #333;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+
+.hvr-ripple-out-bad:hover {
+  color: #f44a4a;
+  border-color: #f44a4a;
+}
+
+.hvr-ripple-out-bad {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+.hvr-ripple-out-bad:before {
+  content: '';
+  position: absolute;
+  border: rgba(0, 0, 0, 0.0) solid 2px;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.hvr-ripple-out-bad:hover:before, .hvr-ripple-out-bad:focus:before, .hvr-ripple-out-bad:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+  border-color: #f44a4a;
+  animation-fill-mode: forwards;
+}
+
+.fill-bad {
+  background-color: #f44a4a; 
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.fill-bad:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.active {
+  color: #61D6D6 !important;
+}
 
