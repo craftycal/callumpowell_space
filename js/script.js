@@ -1,10 +1,19 @@
 $( document ).ready(function() {
 
+  // vibration for mobile
+  // support for all navigator vibrate veriants
+  navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+  // vibrate on tap
+  $('.vib').click(function() {
+    navigator.vibrate(50);
+  });
+
+
+  // nav menu
   $("#navButton").click(function() {
     $(".navigation").slideToggle("slow", function() {});
   });
   $(window).on('resize', function() {
-
     if ($(this).width() > 800) {
       $('.navigation').css({
         'display': 'flex'
@@ -17,12 +26,7 @@ $( document ).ready(function() {
   });
 
 
-
-  // $( ".box" ).mouseover(function() {
-  //   $(this).css({"width": "50%"});
-  // });
-
-
+  //riple buttons
   $( ".hvr-ripple-out-good" ).click(function() {
     $( this ).toggleClass( "fill-good" );
   });
