@@ -1,3 +1,5 @@
+/* page set-up */
+
 html, body {
   height: 100%;
   margin: 0px;
@@ -5,7 +7,6 @@ html, body {
   color: #333333;
   background-color: #FDFDFD;
 }
-
 
 footer {
   margin-top: 20px;
@@ -36,6 +37,24 @@ img {
   flex-flow: row wrap;
 }
 
+.item-grow-1 {  flex-grow: 1; }
+.item-grow-2 {  flex-grow: 2; }
+.item-grow-3 {  flex-grow: 3; }
+.item-grow-4 {  flex-grow: 4; }
+.item-grow-5 {  flex-grow: 5; }
+.item-grow-6 {  flex-grow: 6; }
+
+.order-1 {  order: 1; }
+.order-2 {  order: 2; }
+.order-3 {  order: 3; }
+.order-4 {  order: 4; }
+.order-5 {  order: 5; }
+.order-6 {  order: 6; }
+
+.logo {
+  width: 50px;
+}
+
 /* nav */
 .navigation {
   list-style: none;
@@ -48,9 +67,7 @@ img {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
-  padding: 0px;
 }
-
 
 .navigation a {
   text-decoration: none;
@@ -84,14 +101,6 @@ img {
   padding: 12px 12px 0px 12px;
 }
 
-.logo {
-  width: 50px; 
-  height: auto;
-}
-
-.masthead .title h2 {
-  text-align: left;
-}
 
 .masthead p{
   margin: 0px; 
@@ -289,3 +298,4 @@ img {
 .active {
   color: #61D6D6 !important;
 }
+
