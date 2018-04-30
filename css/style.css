@@ -52,7 +52,7 @@ img {
 .order-6 {  order: 6; }
 
 .logo {
-  width: 50px;
+  width: 100px;
 }
 
 /* nav */
@@ -97,7 +97,7 @@ img {
   border-bottom: 2px solid #dddddd;
 }
 
-.logoBox {
+.logo-box {
   padding: 12px 12px 0px 12px;
 }
 
@@ -133,7 +133,7 @@ img {
   flex-grow: 1;
 }
 
-.captionBox {
+.caption-box {
   margin: 10px 0px 5px 0px;
   padding: 10px;
 }
@@ -144,20 +144,20 @@ img {
   font-size: 1em;
 }
 
-.innerBox {
+.inner-box {
   border: 2px solid #dddddd;
   border-radius: 4px;
   padding: 5px;
 } 
 
-.innerBox img{
+.inner-box img{
   display: block;
   min-width: 100px;
   max-width: 400px;
   margin: 0 auto;
 }
 
-.innerBox:hover {
+.inner-box:hover {
   border: 2px solid #39CCCC;
 } 
 
@@ -299,3 +299,6 @@ img {
   color: #61D6D6 !important;
 }
 
+.largehl {
+  width: 100%;
+}

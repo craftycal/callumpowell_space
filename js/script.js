@@ -10,9 +10,10 @@ $( document ).ready(function() {
 
 
   // nav menu
-  $("#navButton").click(function() {
-    $(".navigation").slideToggle("slow", function() {});
+  $( "#navButton" ).click(function() {
+    $( ".navigation" ).slideToggle("slow", function() {});
   });
+
   $(window).on('resize', function() {
     if ($(this).width() > 800) {
       $('.navigation').css({
@@ -25,14 +26,18 @@ $( document ).ready(function() {
     }
   });
 
+  // $( '.box' ).click(function() {
+  //   $( this ).toggleclass( 'large-box' );
+  // });
+
 
   //riple buttons
-  $( ".hvr-ripple-out-good" ).click(function() {
-    $( this ).toggleClass( "fill-good" );
+  $( '.hvr-ripple-out-good' ).click(function() {
+    $( this ).toggleClass( 'fill-good' );
   });
 
-  $( ".hvr-ripple-out-bad" ).click(function() {
-    $( this ).toggleClass( "fill-bad" );
+  $( '.hvr-ripple-out-bad' ).click(function() {
+    $( this ).toggleClass( 'fill-bad' );
   });
 
 
