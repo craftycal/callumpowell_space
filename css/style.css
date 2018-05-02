@@ -308,8 +308,6 @@ img {
 }
 
 .expand {
-  /* color: #dddddd;
-  border-color: #dddddd; */
   float: right;
   cursor: pointer;
   position: relative;

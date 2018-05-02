@@ -28,7 +28,7 @@ $( document ).ready(function() {
 
   // expand the box
   $( '.expand' ).click("slow", function() {
-    $( '.expand' ).closest('.hidden').slideToggle(function() {
+    $('.hidden').slideToggle(function() {
       $(this).closest('.box').toggleClass('large-box');
       $('.shift').toggleClass("fa-expand fa-compress");
     });
