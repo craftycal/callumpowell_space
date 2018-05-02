@@ -299,6 +299,24 @@ img {
   color: #61D6D6 !important;
 }
 
-.largehl {
+.hidden {
+  display: none;
+}
+
+.site-link {
+  margin-bottom: 20px;
+}
+
+.expand {
+  /* color: #dddddd;
+  border-color: #dddddd; */
+  float: right;
+  cursor: pointer;
+  position: relative;
+  top: -34px;
+  left: 14px;
+}
+
+.large-box {
   width: 100%;
 }

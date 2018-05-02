@@ -13,7 +13,6 @@ $( document ).ready(function() {
   $( "#navButton" ).click(function() {
     $( ".navigation" ).slideToggle("slow", function() {});
   });
-
   $(window).on('resize', function() {
     if ($(this).width() > 800) {
       $('.navigation').css({
@@ -26,9 +25,14 @@ $( document ).ready(function() {
     }
   });
 
-  // $( '.box' ).click(function() {
-  //   $( this ).toggleclass( 'large-box' );
-  // });
+
+  // expand the box
+  $( '.expand' ).click("slow", function() {
+    $( '.expand' ).closest('.hidden').slideToggle(function() {
+      $(this).closest('.box').toggleClass('large-box');
+      $('.shift').toggleClass("fa-expand fa-compress");
+    });
+  });
 
 
   //riple buttons
@@ -39,7 +43,6 @@ $( document ).ready(function() {
   $( '.hvr-ripple-out-bad' ).click(function() {
     $( this ).toggleClass( 'fill-bad' );
   });
-
 
 
 });
