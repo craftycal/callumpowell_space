@@ -1,9 +1,7 @@
 $( document ).ready(function() {
 
-  // vibration for mobile
-  // support for all navigator vibrate veriants
+  // vibration
   navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
-  // vibrate on tap
   $('.vib').click(function() {
     navigator.vibrate(50);
   });
@@ -27,7 +25,7 @@ $( document ).ready(function() {
 
 
   // expand the box
-  $( '.expand' ).click("slow", function() {
+  $( '.expand' ).click(function() {
     $('.hidden').slideToggle(function() {
       $(this).closest('.box').toggleClass('large-box');
       $('.shift').toggleClass("fa-expand fa-compress");
