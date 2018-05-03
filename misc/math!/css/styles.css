@@ -1,0 +1,75 @@
+
+/*root frac*/
+.Sroot-sim-frac {	font-size: 2.5em; font-weight: 100;}
+.Sroot-sum-frac {	border-top: 1px solid #444;	position: relative; 	top: -23px; left: -2px;} 
+.Sroot-sum-frac .frac { position: relative;	top: 12px;}
+/* ^End^ */
+
+
+
+
+
+/*  sup frac with internal sup too!!   */
+sup .frac { font-size: 10px !important; line-height: 12px; }
+sup .frac span.bottom { padding: 0px; line-height: 16px; position: relative; top: 2px;}
+sup .frac sub, sup .frac sup  { font-size: 1em !important;}
+sup .frac span.bottom sub, sup .frac span.bottom sup  { font-size: 1em !important;}
+.frac sup, .frac sub  { font-size: 0.8em !important;}
+/* ^End^ */
+
+
+/*      square root      */
+.Sroot-sim { font-size: 1.5em; }
+.Sroot-sum { padding-top: 8px; border-top: 1px solid #444; }
+/* ^End^ */
+
+
+
+/*      fraction      */
+.frac { font-size: 14px; display: inline-block; position: relative; vertical-align: middle; letter-spacing: 0.0001em; text-align: center; line-height: 20px; margin: 2px; }
+.frac > span.symbol, span.bottom { display: block; padding: 0.05em; }
+.frac span.bottom { border-top: thin solid black; }
+.frac span.bottom2 { border-top: thin solid white; }
+.frac span.symbol { display: none; }
+/* ^End^ */
+
+
+/*square root in sup*/
+sup .Sroot-sum { position: relative; top: 2px; padding-top: 4px; }
+sup .Sroot-sim { font-size: 1.5em; position: relative;	top: 2px; }
+/* ^End^ */
+
+
+
+/*      frac without line      */
+.over-top { position: relative; top: 0.1em !important; }
+.under-top { border: none !important; position: relative; bottom: 0.4em !important; }
+/* ^End^ */
+
+
+
+/*      dashed list      */
+ul.dashed { list-style-type: none; }
+ul.dashed > li { text-indent: -5px; }
+ul.dashed > li:before { position: relative; right: 0.5em; content: "−"; text-indent: -5px; }
+/* ^End^ */
+
+
+/*      big brackets      */
+/*.bigBrac { height: calc(100% - 100px); padding: 10px 10px; border-radius: 50%;  display: inline-block; border-left: 1px solid #444;  border-right: 1px solid #444;  border-top: 1px solid #fff;  border-bottom: 1px solid #fff; }*/
+
+
+.bigBrac { height: calc(100% + 100px);   display: inline-block; padding: 10px 8px; border-left: 1px solid #444; border-right: 1px solid #444; border-radius: 50%; border-top: 1px solid #fff; border-bottom: 1px solid #fff; }
+/* ^End^ */
+
+
+/*      big brackets      */
+.bigBracSquare { padding: 0px 8px;  display: inline-block; border-left: 1px solid #444;  border-right: 1px solid #444;  border-top: 1px solid #444;  border-bottom: 1px solid #444; }
+.bigBracSquare::after { content: ""; background-color: white; display: block; width: calc(100% - 4px); height: 1px; margin: 0 auto; position: relative; top: 1px; }
+.bigBracSquare::before { content: ""; background-color: white; display: block; width: calc(100% - 4px); height: 1px; margin: 0 auto; position: relative; top: -1px; }
+/* ^End^ */
+
+
+/* limit directly under  */
+.alignSup { border: none !important; position: relative; bottom: 0.6em !important; height: 12px !important; }
+/* ^End^ */

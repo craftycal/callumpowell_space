@@ -23,13 +23,17 @@ $( document ).ready(function() {
     }
   });
 
+  $('.hvr-ripple-out-good').click(function() {
+     var el = $(this),
+     newone = el.clone(true);
+     el.before(newone);
+     el.remove();
+     newone.addClass('fill-good');
+});
 
-  // expand the box
-  $( '.expand' ).click(function() {
-    $('.hidden').slideToggle(function() {
-      $(this).closest('.box').toggleClass('large-box');
-      $('.shift').toggleClass("fa-expand fa-compress");
-    });
+
+  $('.hvr-ripple-out-good').onClick(function(){
+      $(this).addClass('hvr-ripple-out');
   });
 
 
