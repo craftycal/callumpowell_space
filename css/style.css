@@ -285,7 +285,6 @@ i {
   width: 100% !important;
 }
 
-
 .test-box {
   width: 20px;
   height: 20px;
@@ -302,12 +301,11 @@ i {
   background-clip: border-box;
 }
 
-
 .next-button {
   width: 100%;
   margin: 0 auto;
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   text-align: center;
   color: #ffffff;
   font-size: 2em;
@@ -318,3 +316,14 @@ i {
 .next-button a {
   color: #ffffff;
 }
+
+.fa-arrow-down {
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 33px;
+  height: 33px;
+  border: 2px solid #ffffff;
+}
+
