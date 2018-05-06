@@ -1,5 +1,5 @@
 @media all and (max-width: 800px) {
-
+  
   .box {
     width: 50% !important;
     flex-grow: 2;
@@ -11,6 +11,7 @@
   }
   
   .navigation {
+    z-index: 50;
     justify-content: space-around;
     display: none;
   }
@@ -19,9 +20,16 @@
     display: block;
   }
   
+  #navButton {
+    background-color: rgba(240, 240, 240, 0.2);
+  }
   
+  #mastTitle {
+    font-size: 5vw;
+  }
   
-  
-  
+  .next-button {
+    opacity: 0.6;
+  }
   
 }

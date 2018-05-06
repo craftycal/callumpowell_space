@@ -18,33 +18,33 @@ $( document ).ready(function() {
       });
     } else {
       $('.navigation').css({
-        'display': 'none'
+        'display': 'none',
+        'height': '50px !important'
       });
     }
   });
 
+
+  // scroll animation
+  function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+  }
+  $(".next-button").click(function() {
+    scrollToAnchor('start');
+  });
+
+
+  // ripple button
   $('.hvr-ripple-out-good').click(function() {
-     var el = $(this),
-     newone = el.clone(true);
-     el.before(newone);
-     el.remove();
-     newone.addClass('fill-good');
-});
-
-
-  $('.hvr-ripple-out-good').onClick(function(){
-      $(this).addClass('hvr-ripple-out');
+    var el = $(this),
+    newone = el.clone(true);
+    el.before(newone);
+    el.remove();
+    newone.addClass('fill-good');
   });
-
-
-  //riple buttons
-  $( '.hvr-ripple-out-good' ).click(function() {
-    $( this ).toggleClass( 'fill-good' );
+  $('.hvr-ripple-out-good').click(function(){
+    $(this).addClass('hvr-ripple-out');
   });
-
-  $( '.hvr-ripple-out-bad' ).click(function() {
-    $( this ).toggleClass( 'fill-bad' );
-  });
-
 
 });
