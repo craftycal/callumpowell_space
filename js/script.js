@@ -9,8 +9,9 @@ $( document ).ready(function() {
 
   // nav menu
   $( '#navButton' ).click(function() {
-    $( '.navigation' ).slideToggle("slow", function() {
-      $('.no-colour').toggleClass('colour').animate('slow');
+    $( '.navigation' ).slideToggle( 'slow', function() {
+      $( '.no-colour' ).toggleClass( 'colour' );
+      $( '.fa-bars' ).toggleClass( 'fa-times' );
     });
   });
 
@@ -50,5 +51,4 @@ $( document ).ready(function() {
   $('.hvr-ripple-out-good').click(function(){
     $(this).addClass('hvr-ripple-out');
   });
-
 });

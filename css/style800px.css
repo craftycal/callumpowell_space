@@ -6,6 +6,7 @@
   }
   
   .navigation li {
+    padding: 10px;
     display: block;
     flex-direction: column;
   }
@@ -14,6 +15,7 @@
     z-index: 50;
     justify-content: space-around;
     display: none;
+    height: 100vh;
   }
   
   #navButton {

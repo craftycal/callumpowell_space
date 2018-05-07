@@ -285,7 +285,7 @@ i {
 .card { 
   height: 100vh;
   width: 100%;
-  background-image: url('../images/card.jpg');
+  background-image: url('../images/card.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -323,6 +323,3 @@ i {
   background-color: rgba(250, 250, 250, 1) !important;
 }
 
-.no-colour {
-  background-color: rgba(250, 250, 250, 0.2);
-}
