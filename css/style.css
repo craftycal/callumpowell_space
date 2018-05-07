@@ -4,18 +4,8 @@ html, body {
   height: 100%;
   margin: 0px;
   font-family: 'muli', sans-serif;
-  color: #333333;
+  color: #3C444C;
   background-color: #FDFDFD;
-}
-
-footer {
-  margin-top: 20px;
-  height: 50px;
-  padding: 0px 20px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
 }
 
 main {
@@ -35,10 +25,11 @@ img {
 }
 
 nav {
-   position:fixed;
-   top: 0;
-   left: 0;
-   right: 0;
+  z-index: 50;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 i {
@@ -89,7 +80,7 @@ i {
   z-index: 50;
   list-style: none;
   margin: 0; 
-  background-color: #333333;
+  background-color: #3C444C;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -116,8 +107,8 @@ i {
 }
 
 .navigation a:hover {
-  background: #444444;
-  color: #61D6D6;
+  background: #E54F43;
+  color: #fff;
 }
 
 .masthead {
@@ -129,7 +120,7 @@ i {
 .masthead p{
   padding: 4px;
   margin: 0px; 
-  color: #333333;
+  color: #3C444C;
 }
 
 #navButton {
@@ -325,5 +316,13 @@ i {
   width: 33px;
   height: 33px;
   border: 2px solid #ffffff;
+
 }
 
+.colour {
+  background-color: rgba(250, 250, 250, 1) !important;
+}
+
+.no-colour {
+  background-color: rgba(250, 250, 250, 0.2);
+}

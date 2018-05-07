@@ -8,14 +8,18 @@ $( document ).ready(function() {
 
 
   // nav menu
-  $( "#navButton" ).click(function() {
-    $( ".navigation" ).slideToggle("slow", function() {});
+  $( '#navButton' ).click(function() {
+    $( '.navigation' ).slideToggle("slow", function() {
+      $('.no-colour').toggleClass('colour').animate('slow');
+    });
   });
+
   $(window).on('resize', function() {
     if ($(this).width() > 800) {
       $('.navigation').css({
         'display': 'flex'
       });
+
     } else {
       $('.navigation').css({
         'display': 'none',
