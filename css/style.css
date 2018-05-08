@@ -319,7 +319,16 @@ i {
 
 }
 
+.no-colour {
+   background-color: rgba(250, 250, 250, 0.1);
+   -webkit-transition: background-color 0.7s ease-out;
+   -moz-transition: background-color 0.7s ease-out;
+   -ms-transition: background-color 0.7s ease-out;
+   -o-transition: background-color 0.7s ease-out;
+   transition: background-color 0.7s ease-out;
+}
+
 .colour {
-  background-color: rgba(250, 250, 250, 1) !important;
+   background-color: rgba(250, 250, 250, 1);
 }
 
