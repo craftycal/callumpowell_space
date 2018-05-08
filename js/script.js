@@ -8,7 +8,7 @@ $( document ).ready(function() {
 
 
   // nav menu
-  $( '#navButton' ).click(function() {
+  $( '#navButton' ).on('click tap', function() {
     $( '.navigation' ).slideToggle( 'slow', function() {
       $( '.no-colour' ).toggleClass( 'colour' );
       $( '.fa-bars' ).toggleClass( 'fa-times' );
@@ -35,20 +35,20 @@ $( document ).ready(function() {
     var aTag = $("a[name='"+ aid +"']");
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
   }
-  $(".next-button").click(function() {
+  $(".next-button").on('click tap', function() {
     scrollToAnchor('start');
   });
 
 
   // ripple button
-  $('.hvr-ripple-out-good').click(function() {
+  $('.hvr-ripple-out-good').on('click tap', function() {
     var el = $(this),
     newone = el.clone(true);
     el.before(newone);
     el.remove();
     newone.addClass('fill-good');
   });
-  $('.hvr-ripple-out-good').click(function(){
+  $('.hvr-ripple-out-good').on('click tap', function(){
     $(this).addClass('hvr-ripple-out');
   });
 });
