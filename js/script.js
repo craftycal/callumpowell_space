@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(window).on("load", function() {
 
   // vibration
   navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
